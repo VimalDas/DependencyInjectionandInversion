@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		94926A0F2B010D8F00C6059B /* DependencyInjectionandInversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 94926A0D2B010D8F00C6059B /* DependencyInjectionandInversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94926A172B010DE600C6059B /* Youtube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94926A162B010DE600C6059B /* Youtube.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94926A0A2B010D8F00C6059B /* DependencyInjectionandInversion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DependencyInjectionandInversion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94926A0D2B010D8F00C6059B /* DependencyInjectionandInversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DependencyInjectionandInversion.h; sourceTree = "<group>"; };
 		94926A0E2B010D8F00C6059B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94926A162B010DE600C6059B /* Youtube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youtube.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				94926A0D2B010D8F00C6059B /* DependencyInjectionandInversion.h */,
+				94926A162B010DE600C6059B /* Youtube.swift */,
 				94926A0E2B010D8F00C6059B /* Info.plist */,
 			);
 			path = DependencyInjectionandInversion;
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					94926A092B010D8F00C6059B = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94926A172B010DE600C6059B /* Youtube.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		94926A132B010D8F00C6059B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -276,7 +282,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vimal.DependencyInjectionandInversion;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -284,6 +292,7 @@
 		94926A142B010D8F00C6059B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -300,6 +309,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vimal.DependencyInjectionandInversion;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
